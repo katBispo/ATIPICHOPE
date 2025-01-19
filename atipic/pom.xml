@@ -68,6 +68,11 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+
 	</dependencies>
 
 	<build>
@@ -79,4 +84,15 @@
 		</plugins>
 	</build>
 
+<http>
+	<intercept-url pattern="/**" access="authenticated"/>
+	<form-login />
+	<http-basic />
+
+	<user-service>
+		<user name="user"
+			password="{noop}password"
+			authorities="ROLE_USER" />
+	</user-service>
+</http>
 </project>
