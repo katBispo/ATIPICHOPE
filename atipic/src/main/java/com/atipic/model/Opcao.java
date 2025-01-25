@@ -1,5 +1,7 @@
 package com.atipic.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -18,6 +20,7 @@ public class Opcao {
 
     @ManyToOne
     @JoinColumn(name = "pergunta_id", nullable = false)
+    @JsonBackReference
     private Pergunta pergunta;
 
     public Long getId() {

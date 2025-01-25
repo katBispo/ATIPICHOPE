@@ -3,6 +3,8 @@ package com.atipic.model;
 import jakarta.persistence.*;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 
 @Entity
 @Table(name = "cenas")
@@ -22,6 +24,7 @@ public class Cena {
     private String urlVideo;
 
     @OneToMany(mappedBy = "cena", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonBackReference
     private List<Pergunta> perguntas;
 
     @ManyToMany

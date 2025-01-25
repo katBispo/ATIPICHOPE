@@ -3,6 +3,8 @@ package com.atipic.model;
 import jakarta.persistence.*;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 @Table(name = "usuarios")
 public class Usuario {
@@ -24,6 +26,7 @@ public class Usuario {
     private Integer idade;
 
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
     private List<Progresso> progresso;
 
     public Long getId() {
