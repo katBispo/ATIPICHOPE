@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'praticaMenu_screen.dart';
-
 class MenuScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -73,7 +72,7 @@ class MenuScreen extends StatelessWidget {
     );
   }
 
-  // Função para criar os botões do menu
+  // Função para criar os botões do menu // colocar dps a os de widget em cima do icon
   Widget buildMenuButton(BuildContext context, String text, IconData icon,
       Color color, VoidCallback onTap) {
     return Padding(
