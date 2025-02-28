@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import './Desafios/Resolucao_conflito/conflictResolutionIntroScreen.dart'; // Caminho corrigido
 import './Desafios/empatia/EmpatiaIntroScreen.dart'; // Caminho corrigido
-//import './Desafios/trabalho_equipe/Trabalho_equipeIntroScreen.dart'; // Caminho corrigido
-//import './Desafios/assertividade/assertividadeIntroScreen.dart'; // Caminho corrigido
-//import './Desafios/comunicacao/comunicacaoIntroScreen.dart'; // Caminho corrigido
+import './Desafios/trabalho_equipe/TrabalhoEquipeIntroScreen.dart'; // Caminho corrigido
+import './Desafios/assertividade/AssertividadeIntroScreen.dart'; // Caminho corrigido
+import './Desafios/comunicacao/ComunicacaoIntroScreen.dart'; // Caminho corrigido
 
 class PraticaMenuScreen extends StatelessWidget {
   @override
@@ -30,7 +30,10 @@ class PraticaMenuScreen extends StatelessWidget {
                   }),
                   SizedBox(width: 20),
                   _buildCircle(Icons.record_voice_over, "Comunicação", () {
-                    // Adicione navegação para a tela de Comunicação quando tiver a tela pronta
+                     Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ComunicacaoIntroScreen()),
+                    );
                   }),
                 ],
               ),
@@ -39,12 +42,18 @@ class PraticaMenuScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   _buildCircle(Icons.check_circle, "Assertividade", () {
-                    // Adicione navegação para a tela de Assertividade
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => AssertividadeIntroScreen()),
+                    );   
                   }),
                   SizedBox(width: 20),
                   _buildCircle(Icons.groups, "Trabalho em equipe", () {
-                    // Adicione navegação para a tela de Trabalho em equipe
-                  }),
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => TrabalhoEquipeIntroScreen()),
+                    );                  
+                    }),
                 ],
               ),
               SizedBox(height: 20),

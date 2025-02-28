@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ConflictResolutionIntroScreen extends StatelessWidget {
+class AssertividadeIntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,14 +11,14 @@ class ConflictResolutionIntroScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // Ícone principal representando conflito/resolução
-            Icon(Icons.handshake, size: 100, color: Color(0xFF0297B2)),
+            // Ícone principal representando assertividade
+            Icon(Icons.speaker_phone, size: 100, color: Color(0xFF0297B2)),
 
             SizedBox(height: 20),
 
             // Título
             Text(
-              "Nível de Resolução de Conflitos",
+              "Nível de Assertividade",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 24,
@@ -31,33 +31,33 @@ class ConflictResolutionIntroScreen extends StatelessWidget {
 
             // Texto explicativo
             Text(
-              "Bem-vindo ao desafio! Você enfrentará situações fictícias baseadas em desafios reais do dia a dia. Sua missão é escolher como reagiria em cada cenário. Suas respostas revelarão seu estilo de resolução de conflitos!",
+              "Bem-vindo ao desafio! Você enfrentará situações fictícias sobre assertividade. Sua missão é escolher como reagiria em cada cenário. Suas respostas revelarão seu nível de assertividade!",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Colors.black87),
             ),
 
             SizedBox(height: 30),
 
-            // Ícones representando diferentes reações a conflitos
+            // Ícones representando diferentes estilos de comunicação assertiva
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(
                   children: [
-                    Icon(Icons.sentiment_very_satisfied, size: 50, color: Color(0xFFB9E383)),
-                    Text("Acalmar"),
+                    Icon(Icons.record_voice_over, size: 50, color: Color(0xFFB9E383)),
+                    Text("Comunicar"),
                   ],
                 ),
                 Column(
                   children: [
-                    Icon(Icons.sentiment_neutral, size: 50, color: Colors.orange),
-                    Text("Negociar"),
+                    Icon(Icons.balance, size: 50, color: Colors.orange),
+                    Text("Equilibrar"),
                   ],
                 ),
                 Column(
                   children: [
-                    Icon(Icons.sentiment_very_dissatisfied, size: 50, color: Color(0xFFE33519)),
-                    Text("Confrontar"),
+                    Icon(Icons.cancel, size: 50, color: Color(0xFFE33519)),
+                    Text("Ignorar"),
                   ],
                 ),
               ],
@@ -68,7 +68,7 @@ class ConflictResolutionIntroScreen extends StatelessWidget {
             // Botão para iniciar o desafio
             ElevatedButton(
               onPressed: () {
-                // Navegar para a tela do quiz
+                // Navegar para a tela do quiz de assertividade
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0xFF0297B2), // Azul vibrante
@@ -82,9 +82,10 @@ class ConflictResolutionIntroScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
               ),
             ),
+
             SizedBox(height: 20),
 
-   // Botão de voltar
+            // Botão de voltar
             ElevatedButton.icon(
               onPressed: () {
                 Navigator.pop(context); // Voltar para a tela anterior
@@ -102,8 +103,6 @@ class ConflictResolutionIntroScreen extends StatelessWidget {
                 ),
               ),
             ),
-
-
           ],
         ),
       ),
