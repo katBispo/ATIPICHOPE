@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:atipicapp/screens/Desafios/assertividade/AssertividadeQuizScreen.dart'; // Caminho correto para o arquivo
 
 class AssertividadeIntroScreen extends StatelessWidget {
   @override
@@ -68,7 +69,10 @@ class AssertividadeIntroScreen extends StatelessWidget {
             // Botão para iniciar o desafio
             ElevatedButton(
               onPressed: () {
-                // Navegar para a tela do quiz de assertividade
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => VideoQuizScreen()),
+                );
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0xFF0297B2), // Azul vibrante

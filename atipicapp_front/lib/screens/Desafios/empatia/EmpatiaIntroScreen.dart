@@ -1,3 +1,4 @@
+import 'package:atipicapp/screens/Desafios/empatia/EmpatiaQuizScreen.dart';
 import 'package:flutter/material.dart';
 
 class EmpatiaIntroScreen extends StatelessWidget {
@@ -68,7 +69,10 @@ class EmpatiaIntroScreen extends StatelessWidget {
             // Botão para iniciar o desafio
             ElevatedButton(
               onPressed: () {
-                // Navegar para a tela do quiz
+                Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Empatiaquizscreen()),
+              );
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0xFF0297B2), // Azul vibrante

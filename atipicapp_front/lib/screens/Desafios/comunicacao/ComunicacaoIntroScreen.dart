@@ -1,3 +1,4 @@
+import 'package:atipicapp/screens/Desafios/comunicacao/ComunicaoQuiz.dart';
 import 'package:flutter/material.dart';
 
 class ComunicacaoIntroScreen extends StatelessWidget {
@@ -68,7 +69,11 @@ class ComunicacaoIntroScreen extends StatelessWidget {
             // Botão para iniciar o desafio
             ElevatedButton(
               onPressed: () {
-                // Navegar para a tela do quiz de comunicação
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Comunicaoquiz()),
+                  );
+                                  
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0xFF0297B2), // Azul vibrante
