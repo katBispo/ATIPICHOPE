@@ -13,7 +13,7 @@ class _VideoQuizScreenState extends State<Empatiaquizscreen> {
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset('videos/resolução conflitos/00.Resolução de conflitos(colocar botoes aqui).mp4')      ..initialize().then((_) {
+    _controller = VideoPlayerController.asset('ssets/videos/bintervir_e_pedir_q_se_acalmem.mp4')      ..initialize().then((_) {
         setState(() {});
         _controller.play();
       });

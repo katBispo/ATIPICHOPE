@@ -13,7 +13,7 @@ class _VideoQuizScreenState extends State<VideoQuizScreen> {
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset('videos/resolução conflitos/00.Resolução de conflitos(colocar botoes aqui).mp4')      ..initialize().then((_) {
+    _controller = VideoPlayerController.asset('assets/videos/00_Resolucao_de_conflitos.mp4')      ..initialize().then((_) {
         setState(() {});
         _controller.play();
       });

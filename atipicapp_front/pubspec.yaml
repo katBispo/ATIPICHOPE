@@ -52,6 +52,12 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - assets/videos/00_Resolucao_de_conflitos.mp4
+    - assets/videos/dTomarpartidodeumdoslados.mp4
+    - assets/videos/bintervir_e_pedir_q_se_acalmem.mp4
+    - assets/videos/cSugerirqueumdosdoissaiadasala.mp4
+    - assets/videos/aignorar.mp4
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
