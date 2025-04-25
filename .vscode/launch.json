@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "atipicapp_front",
+            "cwd": "atipicapp_front",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "atipicapp_front (profile mode)",
+            "cwd": "atipicapp_front",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "atipicapp_front (release mode)",
+            "cwd": "atipicapp_front",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

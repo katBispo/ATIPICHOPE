@@ -1,0 +1,2 @@
+C:/ATIPICHOPE/atipicapp_front/android/app/.cxx/Debug/v6o1j23p/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/ATIPICHOPE/atipicapp_front/android/app/.cxx/Debug/v6o1j23p/armeabi-v7a/CMakeFiles/rebuild_cache.dir
